@@ -1,0 +1,467 @@
+header
+{
+    max-width: 1300px;
+    margin:0 auto;
+}
+    .logobooki_menu
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+
+    .logobooki_menu img
+    {
+        height:53px;
+        padding-top: 24px;
+    }
+
+    .menu ul
+    {
+        display: flex;
+        flex-direction: row;
+        gap:64px;
+    }
+    .menu ul li
+    {
+
+        font-size: 17px;
+        list-style-type: none;
+    }
+    .menu ul li a
+    {
+        padding-top:16px;
+        display: flex;
+        text-decoration: none;
+    }
+    .menu ul li a:hover
+    {
+        color : #0065FC;
+        border-top: solid 3px #0065FC;
+    }
+
+    .introduction_formulaire
+    {
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+    .introduction_formulaire h1
+    {
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .introduction_formulaire h3
+    {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .formulaire
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .formulaire form p
+    {
+        display:flex;
+        flex-direction: row;
+        align-items:center;   
+    }
+
+    .formulaire i
+    {
+        font-size: 19px;
+        background-color:#F2F2F2;
+        padding: 11px;
+        border-radius: 10px 0 0 10px;
+        border:solid 2px #F2F2F2;
+    }
+    .formulaire form input
+    {
+        font-size: 19px;
+        font-weight: 700;
+        padding-left: 16px;
+        padding-right: 24px;
+        padding-top:8px;
+        padding-bottom: 8px;
+        border-left: none;  
+        border-right: none;
+        border-top: solid 4px #F2F2F2;
+        border-bottom: solid 4px #F2F2F2; 
+    }
+    input::placeholder
+    {
+        color:black; 
+    }
+    input:focus
+    {
+        outline: none;
+    }
+    
+    .formulaire form p .recherche
+    {
+        height: 42px;
+        border-radius: 0 10px 10px 0;
+        color:white;
+        font-size: 16px;
+        font-weight: 700;
+        border:none;
+        background-color: #0065FC;
+        padding-left:24px;
+        padding-right: 24px;
+    }
+    
+    .formulaire form p .loupe
+        {
+            background-color: transparent;
+            border :none;
+        }
+    .formulaire form p .loupe i
+        {
+            display : none;
+        }
+    .Filtres
+    {
+        margin-top: 32px;
+        margin-left: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 11px;
+        font-weight: 900;
+    }
+    .filtres_e_f_r_a
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .Filtres i
+    {
+        font-size: 24px;
+        color:#0065FC;
+        padding:10px;
+        background-color: #F2F2F2;
+        border-radius: 50%;
+        cursor:pointer;
+    }
+    .Filtres i:hover
+    {
+        background-color:rgb(174, 155, 192);
+    }
+    .Economique, .Familial, .Romantique, .Animaux_autorises
+    {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        margin-left: 18px;
+        border:solid 3px #F2F2F2;
+        padding-right: 24px;
+        border-radius:30px;
+    }
+    .Economique h2, .Familial h2, .Romantique h2, .Animaux_autorises h2
+    {
+        line-height: 8px;
+        padding-left: 16px;
+    }
+    .Economique:hover, .Familial:hover, .Romantique:hover, .Animaux_autorises:hover
+    {
+        background-color: rgb(156, 203, 247);
+    }
+    .infos_logements_diponibles
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 32px;
+    }
+    .infos_logements_diponibles i
+    {
+        font-size: 13px;
+        color:#0065FC;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color:white;
+        border-radius: 100%;
+        border:solid 3px #F2F2F2;
+
+    }
+    .infos_logements_diponibles h4
+    {
+        padding-left: 11px;
+        font-size: 15px;
+        font-weight: 500;
+
+    }
+
+
+@media screen and (min-width:768px)and (max-width:992px)
+{
+    .logobooki_menu
+    {
+        display: flex;
+        flex-direction: column;
+        margin:0px;
+    }
+    .logobooki_menu img
+    {
+        height:61px;
+    }
+    .menu
+    {
+        width:80%;
+    }
+    .logobooki_menu ul
+    {
+      
+        padding-left: 0px;
+        gap:0px;
+        justify-content: space-between;
+
+    }
+    .menu ul li
+    {
+        font-size: 21px;
+    }
+    
+    .introduction_formulaire
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        margin-left: 32px;
+    }
+    .introduction_formulaire h1
+    {
+        width:80%;
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .introduction_formulaire h3
+    {
+        font-size: 29px;
+        font-weight: 700;
+
+    }
+    .formulaire i
+    {
+        font-size: 24px;
+    }
+    .formulaire form input
+    {
+        font-size: 24px; 
+        padding-top:7px;
+        padding-bottom: 7px;
+
+    }
+    
+    .formulaire form p .loupe
+    {
+        display: none;
+    }
+    .formulaire form p .recherche
+    {
+        height: 49px;
+        font-size: 24px;
+        margin-left: 0px;
+    }
+    
+    .Filtres
+    {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        font-size: 16px;
+        font-weight: 800;
+        margin-left: 32px;
+    }
+    .Filtres i
+    {
+        font-size: 23px;
+        padding:13px;
+    }
+    .titre_filtre h2
+    {
+        align-items: flex-start;
+    }
+    .filtres_e_f_r_a
+    {
+        flex-wrap: wrap;
+    }
+    .Economique, .Familial, .Romantique, .Animaux_autorises
+    {
+        margin-right: 48px;
+        margin-left: 0em;
+        margin-bottom: 16px;
+       
+    }
+    .infos_logements_diponibles
+    {
+        margin-left: 32px;
+    }
+    .infos_logements_diponibles i
+    {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .infos_logements_diponibles h4
+    {
+        font-size: 21px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width:768px)
+{
+    
+    .logobooki_menu
+    {
+        
+        flex-direction: column;
+        margin-right: 0px;
+        margin-left: 0px;
+        justify-content: space-between;
+    }
+    .logobooki_menu img
+    {
+        height:53px;
+    }
+    .logobooki_menu .menu
+    {
+        width:100%;
+    }
+    .logobooki_menu ul
+    {
+        padding-left: 0px;
+        gap:0px;
+        margin-bottom: 0px;
+       
+    }
+
+    .menu ul li
+    {
+        font-size: 18px;
+        font-weight: 600;
+        width:50%;
+        padding-bottom: 18px;
+        border-bottom:solid 3px #F2F2F2;
+    }
+    .menu ul li a
+    {
+       justify-content:center;
+       padding-top: 0px;
+       color:black;
+    }
+    .menu ul li:hover
+    {
+        border-top: none;
+        padding-bottom: 5px;
+        border-bottom: solid 2px #0065FC;
+    }
+    .menu ul li a:hover
+    {
+        color :#0065FC;
+        border-top: none;
+    }
+    .introduction_formulaire
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .formulaire
+    {
+        justify-content: center;
+        margin-left: 8px;
+    }
+    .introduction_formulaire h1
+    {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom:0px;
+        margin-left: 5px;
+    }
+    .introduction_formulaire h3
+    {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 8px;
+    }
+    .formulaire i
+    {
+        font-size: 19px;
+        padding: 11px;
+    }
+    .formulaire form input
+    {
+        font-size: 19px; 
+        padding-left: 8px;
+        padding-right: 16px;
+    }
+    .formulaire form p .loupe i
+    {
+        display : flex;
+        align-items: center;
+        font-size: 18px;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 16px;
+        height: 19px;
+    }
+    .formulaire form p .loupe
+    {
+
+        margin-left: -16px;
+    }
+   
+    .formulaire form p .recherche
+    {
+        display:none;
+    }
+    .Filtres
+    {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        margin-top: 0px;
+        margin-left: 11px;
+        margin-right:11px;
+        font-size: 11px;
+        font-weight: 900;
+    }
+    .titre_filtre h2
+    {
+        align-items: flex-start;
+    }
+    .filtres_e_f_r_a
+    {
+        flex-wrap: wrap;
+    }
+    .Economique, .Familial, .Romantique, .Animaux_autorises
+    {
+        margin-right: 24px;
+        margin-left: 0px;
+        margin-bottom: 16px;
+    }
+    .infos_logements_diponibles
+    {
+        margin-left: 11px;
+        align-items:baseline;
+    }
+    .infos_logements_diponibles i
+    {
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .infos_logements_diponibles h4
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
